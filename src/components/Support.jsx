@@ -1,15 +1,16 @@
 import React from "react";
 import Navbar from "./hero/Navbar";
 import SearchField from "./hero/SearchField";
-import Footer from "./LandingPage/Footer";
 import search from "./../assets/search.png";
 import phone from "./../assets/phone.png";
 import but from "./../assets/but.png";
 import container from "./../assets/Container.png";
+import Foot from "./LandingPage/Foot";
 
 const Support = () => {
   return (
-    <>
+    <div className="bg-[#f3f0f0]">
+      
       <Navbar />
       <SearchField />
 
@@ -103,8 +104,10 @@ const Support = () => {
       <div className="w-[1437px] h-[340px] absolute top-[1080px] left-[1px]">
         <img src={container} alt="container" />
       </div>
-      <Footer />
-    </>
+      <div className="w-full h-[565px] absolute top-[1420px]">
+        <Foot />
+      </div>
+    </div>
   );
 };
 
